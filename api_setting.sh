@@ -1,9 +1,11 @@
 slack_token=$slack_token
 oauth_access_token=$slack_oauth_access_token
 channel_id=$slack_2ch_channel_id
+
+mkdir src/lambda/ChatAppForQiita/.chalice -p
 printf '{
   "version": "2.0",
-  "app_name": "ChatAppPrivate",
+  "app_name": "ChatAppForQiita",
   "stages": {
     "dev": {
       "api_gateway_stage": "api",

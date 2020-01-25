@@ -3,7 +3,7 @@ image:
 
 tasks:
 - command: sh aws_setting.sh
-# - command: sh api_setting.sh
+- command: sh api_setting.sh
 - command: pipenv install
 
 ports:
