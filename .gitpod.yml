@@ -1,0 +1,13 @@
+image:
+  file: .gitpod.Dockerfile
+
+tasks:
+- command: sh aws_setting.sh
+# - command: sh api_setting.sh
+- command: pipenv install
+
+ports:
+- port: 8080
+  onOpen: open-preview
+- port: 8888
+  onOpen: open-browser
